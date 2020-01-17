@@ -1,5 +1,14 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-const Card = () => {
-    return(<h1>Test</h1>)
+const Card = ({ children }) => {
+    return(<div>
+        { children }
+    </div>)
+}
+
+export default Card;
+
+Card.propTypes = {
+    children : PropTypes.element.isRequired
 }

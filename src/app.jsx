@@ -1,15 +1,15 @@
 import React, { lazy } from 'react'
 import { HashRouter, Route } from 'react-router-dom'
 
-const HomeLayout = lazy(
-    () => import('../src/HomeLayout')
+const LandingLayout = lazy(
+    () => import('./LandingLayout')
 )
 
 const AppLayout = () => {
     return(
         <HashRouter>
             <Route path="/">
-                <HomeLayout />
+                <LandingLayout />
             </Route>
             <Route path="/home"></Route>
             <Route path="/find"></Route>
