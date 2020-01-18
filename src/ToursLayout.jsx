@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom'
 import TourCard from './components/tourCard'
 
 class ToursLayout extends React.Component {
