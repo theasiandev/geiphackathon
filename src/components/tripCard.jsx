@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom'
 const TripCard = ({ title, destination, host, limit, description, startdate, enddate }) => {
     const [redirect, setRedirect] = useState(false)
 
+    let redirectElement;
     if (redirect) {
         redirectElement = (<Redirect to={{
                 pathname : '/details',
