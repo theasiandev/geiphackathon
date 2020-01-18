@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 const TripCard = ({ title, destination, host, limit, description, startdate, enddate }) => {
     return(
         <div>
-            <h3>{ title }</h3>
-            <h4>{ destination }</h4>
+            <h3>Title: { title }</h3>
+            <h4>Destination: { destination }</h4>
             <h4>Host: { host }</h4>
             <h4>Expected Number: { limit }</h4>
             <p>Description: { description }</p>
