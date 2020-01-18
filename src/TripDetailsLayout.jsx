@@ -1,4 +1,5 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom'
 
 class TripDetailsLayout extends React.Component {
     constructor(props) { // pass the trip details in through the props
