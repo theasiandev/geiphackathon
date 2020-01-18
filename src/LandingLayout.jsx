@@ -4,7 +4,7 @@ import Card from './components/card'
 class LandingLayout extends React.Component {
     render() {
         return (
-            <div>
+            <div className>
                 <div>
                     <h1>Wander</h1>
                 </div>
@@ -13,6 +13,7 @@ class LandingLayout extends React.Component {
                         <div class="row">
                             <div class="col-md-6">
                                 <Card>
+                                <h4>Log in</h4>
                                     <div class="form-group">
                                         <label htmlFor="emailInput">Email address</label> 
                                         <input id="emailInput" class="form-control" placeholder="Enter email" type="email" />
@@ -28,6 +29,7 @@ class LandingLayout extends React.Component {
 
                             <div class="col-md-6">
                                 <Card>
+                                <h4>Sign up</h4>
                                     <div class="form-group">
                                         <label htmlFor="emailInput">Email address</label> 
                                         <input id="emailInput" class="form-control" placeholder="Enter email" type="email" /> <small class="form-text text-muted">We'll never share your email with anyone else.</small>
