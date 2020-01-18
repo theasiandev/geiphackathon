@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import NavBar from './components/navbar'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
@@ -12,7 +13,8 @@ class HomeLayout extends React.Component {
     render() {
         return(
             <div>
-                <NavBar />
+               <NavBar />
+
                 <div>
                     <h4>Find a Trip</h4>
                     <input id="country" type="text" />
@@ -23,6 +25,10 @@ class HomeLayout extends React.Component {
                     >
                     </DatePicker>
                     <button type="button" />
+                    <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                    <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 </div>
             </div>
         )

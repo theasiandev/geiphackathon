@@ -5,7 +5,7 @@
 }
 
 header {
-	background: transparent;
+	background: #f54848;
 	color: #fff;
 	padding: 1.3em 0;
 	position: fixed;
@@ -16,7 +16,7 @@ header {
 }
 
 header.scrolled {
-	background: #f54848;
+	background: #4876f5;
 	transition: ease-in-out 400ms;
 }
 
@@ -31,7 +31,7 @@ header::after {
 	font-size: 2.1rem;
 	margin: 0;
 	text-transform: uppercase;
-	font-family: 'Luckiest Guy', cursive !important;
+	font-family: 'Francois One', sans-serif !important;
 }
 
 .NavigationMenu {
@@ -78,7 +78,7 @@ header::after {
 	text-decoration: none;
 }
 
-.NavigationMenu--icon {
+.NavMenuIcon {
 	display: inline-block;
 	font-size: 1.5em;
 	margin-right: 1em;
@@ -87,7 +87,7 @@ header::after {
 	color: rgba(255, 255, 255, .4);
 }
 
-.menu-toggle {
+.toggleMenu {
 	padding: 1em;
 	position: absolute;
 	top: 1.3em;
@@ -126,7 +126,7 @@ header::after {
 }
 
 @media (min-width: 768px) {
-	.menu-toggle {
+	.toggleMenu {
 		display: none;
 	}
 	.NavigationMenu {
@@ -147,7 +147,7 @@ header::after {
 	.NavigationMenu a:hover, .NavigationMenu a:focus {
 		background: transparent;
 	}
-	.NavigationMenu--icon {
+	.NavMenuIcon {
 		display: none;
 	}
 }
