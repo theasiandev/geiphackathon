@@ -17,8 +17,8 @@ class HomeLayout extends React.Component {
 
                 <div>
                     <h4>Find a Trip</h4>
-                    <input id="country" type="text" />
                     <label htmlFor="country">Country: </label>
+                    <input id="country" type="text" />
                     <h5>When are you leaving?</h5>
                     <DatePicker
                         selected={ this.state.date }

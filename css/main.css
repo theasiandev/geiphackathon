@@ -13,7 +13,11 @@ body {
 	line-height: 1.5;
 	color: #333;
 	text-align: left;
-	background-color: white;
+}
+
+body background-image{
+	height:100vh;
+	width: 100vw;
 }
 
 html {
@@ -161,4 +165,9 @@ html {
 	border-radius: 10px;
 }
 
-
+.backgroundImage{
+	background-image: url('../media/loginsignup.jpeg') !important;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	height:57vw;
+}

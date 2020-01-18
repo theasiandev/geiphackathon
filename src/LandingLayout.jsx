@@ -1,12 +1,26 @@
 import React from 'react'
+import { Redirect } from 'react-router-dom'
 import Card from './components/card'
+import styles from '../css/main.css'
 
 class LandingLayout extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { redirect : false }
+    }
+
     render() {
+
+        let redirectElement;
+        if (this.state.redirect) {
+            redirectElement = (<Redirect to="/home" />)
+        }
+
         return (
-            <div className>
+            <div className={styles.backgroundImage}>
                 <div>
                     <h1>Wander</h1>
+                    { redirectElement }
                 </div>
                 <div>
                     <div class="container">
@@ -23,7 +37,7 @@ class LandingLayout extends React.Component {
                                         <input id="passwordInput" class="form-control" placeholder="Password" type="password" />
                                     </div>
 
-                                    <button class="btn btn-danger" type="button">Log In</button>
+                                    <button class="btn btn-danger" type="button" onClick={() => { this.setState({ redirect : true }) }}>Log In</button>
                                 </Card>
                             </div>
 
