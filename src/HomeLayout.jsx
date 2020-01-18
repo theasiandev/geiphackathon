@@ -23,7 +23,7 @@ class HomeLayout extends React.Component {
                     </ol>
                     <div class="carousel-inner">
                         <div class="active carousel-item">
-                            <div class="fill" style="background-image:url(&apos;media/carousel1.jpeg&apos;);"></div>
+                            <div class="fill" style={{ backgroundImage : `url(&apos;media/carousel1.jpeg&apos;)` }}></div>
                             <div class="carousel-caption">
                                 <h2 class="animated1 fadeInRight">Find Travel Buddies</h2>
                                 <p class="animated2 fadeInRight">Browse through the list of trips and select the one you love most</p>
@@ -31,7 +31,7 @@ class HomeLayout extends React.Component {
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="fill" style="background-image:url(&apos;media/carousel2.jpeg&apos;);"></div>
+                            <div class="fill" style={{ backgroundImage : `url(&apos;media/carousel2.jpeg&apos;)` }}></div>
                             <div class="carousel-caption">
                                 <h2 class="animated1 fadeInRight">Start a trip</h2>
                                 <p class="animated2 fadeInRight">Create a travel itinerary and you can choose whether to accept requests from other travelers</p>
@@ -39,7 +39,7 @@ class HomeLayout extends React.Component {
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="fill" style="background-image:url(&apos;media/carousel3.jpeg&apos;);"></div>
+                            <div class="fill" style={{ backgroundImage : `url(&apos;media/carousel3.jpeg&apos;)` }}></div>
                             <div class="carousel-caption">
                                 <h2 class="animated1 fadeInRight">Exclusive discounts</h2>
                                 <p class="animated2 fadeInRight">We have the cheapest tour packages and plane tickets</p>
@@ -50,7 +50,6 @@ class HomeLayout extends React.Component {
                     <a class="carousel-control-prev" data-slide="prev" href="#myCarousel" role="button"><span class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#myCarousel" role="button"><span class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
                 </div>
             </div>
-
                 <div>
                     <h4>Find a Trip</h4>
                     <label htmlFor="country">Country: </label>
@@ -61,10 +60,6 @@ class HomeLayout extends React.Component {
                     >
                     </DatePicker>
                     <button type="button" />
-                    <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                    <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                    <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                    <br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
                 </div>
             </div>
         )

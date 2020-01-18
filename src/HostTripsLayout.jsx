@@ -38,32 +38,43 @@ class HostTripsLayout extends React.Component {
 
     render() {
 
-        const { title, destination, description, limit, startdate, enddate } = this.state
+        const { title, destination, description, limit, startdate, enddate, redirect } = this.state
 
         let redirectElement;
         if (redirect) {
             redirectElement = (<Redirect to="/find" />)
         }
 
-        return(<div>
+        return(<div class="mt-5 pt-5">
             <h1>Host Your Own Trip</h1>
             <div>
                 { redirectElement }
-                <label htmlFor="title">Title: </label>
-                <input id="title" type="text" onChange={(e) => this.setState({ title : e.target.value }) }/>
+
+                <div class="form-group">
+                    <label htmlFor="title">Title</label> 
+                    <input id="title" class="form-control" placeholder="Enter title" type="text" onChange={(e) => this.setState({ title : e.target.value }) }/>
+                </div>
+
+        
                 <label htmlFor="destination">Destination: </label>
                 <select onChange={(e) => this.setState({ destination : e.target.value }) }>
                     <option defaultValue value="Singapore">Singapore</option>
                     <option value="Johor Bahru">JB</option>
                     <option value="Bangkok">Bangkok</option>
                     <option value="Jakarta">Jakarta</option>
-                </select>
+                </select><br />
+
+                <div class="form-group">
+                    <label htmlFor="description">Description</label> 
+                    <input id="description" class="form-control" placeholder="Enter Description" type="textarea" onChange={(e) => this.setState({ title : e.target.value }) }/>
+                </div>
+{/* 
                 <label htmlFor="description">Description: </label>
-                <input id="description" type="textarea" onChange={(e) => this.setState({ description : e.target.value }) }/>
+                <input id="description" type="textarea" onChange={(e) => this.setState({ description : e.target.value }) }/><br /> */}
                 <label htmlFor="number">Number of Travellers: </label>
-                <input id="number" type="number" onChange={(e) => { this.setState({ limit : e.target.value })} }/>
-                <DatePicker id="start" selected={ this.state.date } onChange={(e) => this.setState({ startdate : e.target.value }) }></DatePicker>
-                <DatePicker id="end" selected={ this.state.date } onChange={(e) => this.setState({ enddate : e.target.value }) }></DatePicker>
+                <input id="number" type="number" onChange={(e) => { this.setState({ limit : e.target.value })} }/><br />
+                <DatePicker id="start" selected={ this.state.date } onChange={(e) => this.setState({ startdate : e.target.value }) }></DatePicker><br />
+                <DatePicker id="end" selected={ this.state.date } onChange={(e) => this.setState({ enddate : e.target.value }) }></DatePicker><br />
                 <button type="button" onClick={() => { submitHost(title, destination, description, limit, startdate, enddate).then(this.setState({ redirect : true })) } }>Submit Listing</button>
             </div>
         </div>)
