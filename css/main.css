@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Francois+One&display=swap');
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 1rem;
+	font-weight: 200;
+	line-height: 1.5;
+	color: #333;
+	text-align: left;
+	background-color: white;
+}
+
+html {
+	font-family: sans-serif;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+/*-------------------------------------------*/
+
+/******************/
+
+/* CAROUSEL START */
+
+/******************/
+
+/* CAROUSEL */
+
+.carousel, .carousel-item, .active {
+	height: 100%;
+}
+
+.carousel-inner {
+	height: 100%;
+	background: #000;
+}
+
+.carousel-caption {
+	position: absolute;
+	right: 15%;
+	bottom: 20px;
+	left: 15%;
+	z-index: 10;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #fff;
+	text-align: center;
+}
+
+/* .carousel-caption {
+	padding-bottom: 80px;
+} */
+
+.fill {
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	opacity: 0.6;
+}
+
+/* CAROUSEL BUTTON */
+
+.btn-transparent {
+	background: transparent !important;
+	color: #fff;
+	border: 2px solid #fff !important;
+}
+
+.btn-transparent:hover {
+	background-color: #fff !important;
+	color: rgb(117, 52, 52) !important;
+}
+
+.btn-rounded {
+	border-radius: 70px !important;
+}
+
+.btn-large {
+	padding: 11px 45px !important;
+	font-size: 18px !important;
+}
+
+/* CAROUSEL Caption Animation*/
+
+.animated1 {
+	-webkit-animation-duration: 1.5s;
+	animation-duration: 1.5s;
+}
+
+.animated2 {
+	-webkit-animation-duration: 1.75s;
+	animation-duration: 1.75s;
+}
+
+.animated3 {
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+}
+
+@-webkit-keyframes fadeInRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(100px, 0, 0);
+		transform: translate3d(100px, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+@keyframes fadeInRight {
+	from {
+		opacity: 0;
+		-webkit-transform: translate3d(100px, 0, 0);
+		transform: translate3d(100px, 0, 0);
+	}
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+.fadeInRight {
+	-webkit-animation-name: fadeInRight;
+	animation-name: fadeInRight;
+}
+
+/****************/
+
+/* CAROUSEL END */
+
+/****************/
+
+/*-------------------------------------------*/
+
+
+.logo{
+	font-family: 'Francois One', sans-serif !important;
+}
+
+.cardStyle{
+	background-color: rgb(241, 241, 241);
+	padding:10%;
+	border-radius: 10px;
+}
+
