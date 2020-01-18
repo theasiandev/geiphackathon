@@ -170,8 +170,15 @@ html {
 	background-size: 100%;
 	background-repeat: no-repeat;
 	height:57vw;
+	opacity:0.8;
+}
+
+.pagetitle h1{
+	text-align:center;
+	color:white;
+	font-size:5vw;
 }
 
 .pagetitle{
-	text-align:center;
+	padding:40px;
 }
