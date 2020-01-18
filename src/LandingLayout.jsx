@@ -19,8 +19,12 @@ class LandingLayout extends React.Component {
         return (
             <div className={styles.backgroundImage}>
                 <div>
+<<<<<<< HEAD
+                    <h1 className={styles.pagetitle}>Wander</h1>
+=======
                     <h1>Wander</h1>
                     { redirectElement }
+>>>>>>> e10a4bce84fdb7e9e2dcff2d8aa89e96c19cbebc
                 </div>
                 <div>
                     <div class="container">
