@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import NavBar from './components/navbar'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+import styles from '../css/main.css'
 
 class HomeLayout extends React.Component {
     constructor(props) {
