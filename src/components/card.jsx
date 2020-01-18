@@ -10,5 +10,5 @@ const Card = ({ children }) => {
 export default Card;
 
 Card.propTypes = {
-    children : PropTypes.element.isRequired
+    children : PropTypes.array.isRequired
 }

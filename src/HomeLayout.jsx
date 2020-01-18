@@ -1,6 +1,7 @@
 import React from 'react'
 import NavBar from './components/navbar'
 import DatePicker from 'react-datepicker'
+import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
 class HomeLayout extends React.Component {
     constructor(props) {
