@@ -9,26 +9,46 @@ class LandingLayout extends React.Component {
                     <h1>Wander</h1>
                 </div>
                 <div>
-                    <Card>
-                        <h4>Login</h4>
-                        <label htmlFor="emailInput">Email Address: </label>
-                        <input id="emailInput" type="email"/>
-                        <label htmlFor="passwordInput">Password: </label>
-                        <input id="passwordInput" type="password"/>
-                        <button type="button">Login</button>
-                    </Card>
-                    <Card>
-                        <h4>Signup</h4>
-                        <label htmlFor="emailInput">Email Address: </label>
-                        <input id="emailInput" type="email" />
-                        <label htmlFor="passwordInput">Password: </label>
-                        <input id="passwordInput" type="password" />
-                        <label htmlFor="confirmedPasswordInput">Confirm Password: </label>
-                        <input id="confirmedPasswordInput" type="password" /><br />
-                        <label htmlFor="phone">Phone Number</label>
-                        <input id="phone" type="number" maxLength="8" />
-                        <button type="button">Sign Up</button>
-                    </Card>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <Card>
+                                    <div class="form-group">
+                                        <label htmlFor="emailInput">Email address</label> 
+                                        <input id="emailInput" class="form-control" placeholder="Enter email" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label htmlFor="passwordInput">Password</label> 
+                                        <input id="passwordInput" class="form-control" placeholder="Password" type="password" />
+                                    </div>
+
+                                    <button class="btn btn-danger" type="button">Log In</button>
+                                </Card>
+                            </div>
+
+                            <div class="col-md-6">
+                                <Card>
+                                    <div class="form-group">
+                                        <label htmlFor="emailInput">Email address</label> 
+                                        <input id="emailInput" class="form-control" placeholder="Enter email" type="email" /> <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label htmlFor="phone">Phone Number</label> 
+                                        <input id="phone" class="form-control" placeholder="Enter number" type="email" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label htmlFor="passwordInput">Password</label> 
+                                        <input id="passwordInput" class="form-control" placeholder="Password" type="password" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label htmlFor="confirmedPasswordInput">Confirm Password</label> 
+                                        <input id="confirmedPasswordInput" class="form-control" placeholder="Password" type="password" />
+                                    </div>
+                                    <button class="btn btn-danger" type="button">Sign Up</button>
+                                </Card>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
