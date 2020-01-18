@@ -2,9 +2,9 @@ import React from 'react'
 import TripCard from './components/tripCard'
 
 async function getTrips() {
-    fetch('127.0.0.1:5000/gettrips').then( (response) => {
-        return response.json()
-    })
+    let response = await fetch('http://127.0.0.1:5000/gettrip')
+    let body = await response.json()
+    return body
 }
 
 class FindTripsLayout extends React.Component {
@@ -14,8 +14,10 @@ class FindTripsLayout extends React.Component {
     }
 
     componentDidMount() {
-        // async call to the api endpoint (fetch)
-        getTrips().then(console.log)
+        getTrips().then( (reply) => {
+            console.log(reply, "outside")
+            this.setState({ events : reply.trips })
+        })
     }
 
     render() {
