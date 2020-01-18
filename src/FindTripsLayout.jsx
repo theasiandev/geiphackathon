@@ -2,9 +2,9 @@ import React from 'react'
 import TripCard from './components/tripCard'
 
 async function getTrips() {
-    let response = await fetch('http://127.0.0.1:5000/gettrip')
-    let body = await response.json()
-    return body
+    fetch('127.0.0.1:5000/gettrips').then( (response) => {
+        return response.json()
+    })
 }
 
 class FindTripsLayout extends React.Component {
