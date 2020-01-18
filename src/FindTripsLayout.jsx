@@ -1,5 +1,6 @@
 import React from 'react'
 import TripCard from './components/tripCard'
+import { Redirect } from 'react-router-dom'
 
 async function getTrips() {
     let response = await fetch('http://127.0.0.1:5000/gettrip')
