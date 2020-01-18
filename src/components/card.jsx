@@ -1,14 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styles from '../../css/main.css'
 
 const Card = ({ children }) => {
-    return(<div>
-        { children }
-    </div>)
+    return(
+        <div className={styles.cardStyle}>
+            {children}
+        </div> 
+    )
 }
 
 export default Card;
 
 Card.propTypes = {
-    children : PropTypes.element.isRequired
+    children : PropTypes.array.isRequired
 }

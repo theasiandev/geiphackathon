@@ -1,21 +1,39 @@
-import React, { lazy } from 'react'
+import React from 'react'
 import { HashRouter, Route } from 'react-router-dom'
-
-const LandingLayout = lazy(
-    () => import('./LandingLayout')
-)
+import LandingLayout from './LandingLayout'
+import HomeLayout from './HomeLayout'
+import NavBar from './components/navbar'
+import FindTripsLayout from './FindTripsLayout'
+import InboxLayout from './InboxLayout'
+import HostTripsLayout from './HostTripsLayout'
+import ToursLayout from './ToursLayout'
 
 const AppLayout = () => {
     return(
         <HashRouter>
-            <Route path="/">
+            <Route exact path="/">
                 <LandingLayout />
             </Route>
-            <Route path="/home"></Route>
-            <Route path="/find"></Route>
-            <Route path="/inbox"></Route>
-            <Route path="/host"></Route>
-            <Route path="/tours"></Route>
+            <Route path="/home">
+                <NavBar />
+                <HomeLayout />
+            </Route>
+            <Route path="/find">
+                <NavBar />
+                <FindTripsLayout />
+            </Route>
+            <Route path="/inbox">
+                <NavBar />
+                <InboxLayout />
+            </Route>
+            <Route path="/host">
+                <NavBar />
+                <HostTripsLayout />
+            </Route>
+            <Route path="/tours">
+                <NavBar />
+                <ToursLayout />
+            </Route>
         </HashRouter>
     )
 }
