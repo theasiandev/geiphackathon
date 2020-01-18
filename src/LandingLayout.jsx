@@ -1,10 +1,11 @@
 import React from 'react'
 import Card from './components/card'
+import styles from '../css/main.css'
 
 class LandingLayout extends React.Component {
     render() {
         return (
-            <div className>
+            <div className={styles.backgroundImage}>
                 <div>
                     <h1>Wander</h1>
                 </div>
