@@ -11,20 +11,22 @@ class LandingLayout extends React.Component {
                 <div>
                     <Card>
                         <h4>Login</h4>
-                        <input id="emailInput" type="email"/>
                         <label htmlFor="emailInput">Email Address: </label>
-                        <input id="passwordInput" type="password"/>
+                        <input id="emailInput" type="email"/>
                         <label htmlFor="passwordInput">Password: </label>
+                        <input id="passwordInput" type="password"/>
                         <button type="button">Login</button>
                     </Card>
                     <Card>
                         <h4>Signup</h4>
-                        <input id="emailInput" type="email" />
                         <label htmlFor="emailInput">Email Address: </label>
-                        <input id="passwordInput" type="password" />
+                        <input id="emailInput" type="email" />
                         <label htmlFor="passwordInput">Password: </label>
-                        <input id="confirmedPasswordInput" type="password" />
+                        <input id="passwordInput" type="password" />
                         <label htmlFor="confirmedPasswordInput">Confirm Password: </label>
+                        <input id="confirmedPasswordInput" type="password" /><br />
+                        <label htmlFor="phone">Phone Number</label>
+                        <input id="phone" type="number" maxLength="8" />
                         <button type="button">Sign Up</button>
                     </Card>
                 </div>
