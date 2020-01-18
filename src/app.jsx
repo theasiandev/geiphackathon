@@ -7,6 +7,7 @@ import FindTripsLayout from './FindTripsLayout'
 import InboxLayout from './InboxLayout'
 import HostTripsLayout from './HostTripsLayout'
 import ToursLayout from './ToursLayout'
+import TripDetailsLayout from './TripDetailsLayout'
 
 const AppLayout = () => {
     return(
@@ -33,6 +34,10 @@ const AppLayout = () => {
             <Route path="/tours">
                 <NavBar />
                 <ToursLayout />
+            </Route>
+            <Route path="/details">
+                <NavBar />
+                <TripDetailsLayout />
             </Route>
         </HashRouter>
     )

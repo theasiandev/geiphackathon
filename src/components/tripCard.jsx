@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import { Redirect } from 'react-router-dom'
 
 const TripCard = ({ title, destination, host, limit, description, startdate, enddate }) => {
+    const [redirect, setRedirect] = useState(false)
+
+    let redirectElement;
+    if (redirect) {
+        redirectElement = (<Redirect to={{
+                pathname : '/details',
+                state : { 
+                    title : title, 
+                    destination : destination,
+                    host : host,
+                    limit : limit,
+                    description : description,
+                    startdate : startdate,
+                    enddate : enddate
+                }
+            }} 
+        />)
+    }
+
     return(
-        <div>
+        <div onClick={ setRedirect }>
+            { redirectElement }
             <h3>Title: { title }</h3>
             <h4>Destination: { destination }</h4>
             <h4>Host: { host }</h4>

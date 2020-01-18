@@ -15,7 +15,6 @@ class FindTripsLayout extends React.Component {
 
     componentDidMount() {
         getTrips().then( (reply) => {
-            console.log(reply, "outside")
             this.setState({ events : reply.trips })
         })
     }

@@ -6,7 +6,7 @@ $(window).scroll(function() {
 });
 
 /*navbar onclick -- mobile*/
-$('.menu-toggle').click(function() {
+$('.toggleMenu').click(function() {
 	$('.NavigationMenu').toggleClass('NavigationMenu--open', 500);
 	$(this).toggleClass('open');
 })

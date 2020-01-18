@@ -1,6 +1,25 @@
 import React from 'react'
 import DatePicker from 'react-datepicker'
+import { Redirect } from 'react-router-dom'
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
+
+async function submitTrip(title, destination, description, limit, startdate, enddate) {
+    fetch('http://127.0.0.1:5000/sendtrip', {
+        method : 'POST',
+        headers : {
+            'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify({
+            title : title,
+            destination : destination, 
+            description : description,
+            limit : limit,
+            startdate : startdate,
+            enddate : enddate,
+            host : "Peter" // hardcoded
+        })
+    })
+}
 
 class HostTripsLayout extends React.Component {
     constructor(props) {
@@ -12,14 +31,24 @@ class HostTripsLayout extends React.Component {
             description : "",
             limit : 0,
             startdate : null,
-            enddate : null
+            enddate : null,
+            redirect : false
         }
     }
 
     render() {
+
+        const { title, destination, description, limit, startdate, enddate } = this.state
+
+        let redirectElement;
+        if (redirect) {
+            redirectElement = (<Redirect to="/find" />)
+        }
+
         return(<div>
             <h1>Host Your Own Trip</h1>
             <div>
+                { redirectElement }
                 <label htmlFor="title">Title: </label>
                 <input id="title" type="text" onChange={(e) => this.setState({ title : e.target.value }) }/>
                 <label htmlFor="destination">Destination: </label>
@@ -35,7 +64,7 @@ class HostTripsLayout extends React.Component {
                 <input id="number" type="number" onChange={(e) => { this.setState({ limit : e.target.value })} }/>
                 <DatePicker id="start" selected={ this.state.date } onChange={(e) => this.setState({ startdate : e.target.value }) }></DatePicker>
                 <DatePicker id="end" selected={ this.state.date } onChange={(e) => this.setState({ enddate : e.target.value }) }></DatePicker>
-                <button type="button">Submit Listing</button>
+                <button type="button" onClick={() => { submitHost(title, destination, description, limit, startdate, enddate).then(this.setState({ redirect : true })) } }>Submit Listing</button>
             </div>
         </div>)
     }
