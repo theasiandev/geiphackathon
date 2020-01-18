@@ -1,6 +1,7 @@
 import React from 'react'
 import { Redirect } from 'react-router-dom'
 import Card from './components/card'
+import styles from '../css/main.css'
 
 class LandingLayout extends React.Component {
     constructor(props) {
@@ -16,7 +17,7 @@ class LandingLayout extends React.Component {
         }
 
         return (
-            <div className>
+            <div className={styles.backgroundImage}>
                 <div>
                     <h1>Wander</h1>
                     { redirectElement }
