@@ -1,5 +1,4 @@
 import React from 'react'
-import NavBar from './components/navbar'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
@@ -12,7 +11,6 @@ class HomeLayout extends React.Component {
     render() {
         return(
             <div>
-                <NavBar />
                 <div>
                     <h4>Find a Trip</h4>
                     <input id="country" type="text" />
