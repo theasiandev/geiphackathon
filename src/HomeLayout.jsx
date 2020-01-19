@@ -142,7 +142,8 @@ class HomeLayout extends React.Component {
                             <img class="card-img-top" src={guy1} alt="Card image cap" />
                             <div class="card-body" >
                             <h4 class="card-title">Road trip to Beijing</h4>
-                            <p class="card-text">Hello eveyone! im looking for 3 people to join me and my friends on a trip to Beijing</p>
+                            <p class="card-text">Hello eveyone! im looking for 3 people to join me and my friends on a trip to Beijing from KL</p>
+                            <a href="#" class="btn btn-danger" >Join</a>
                             </div>
                         </div>
                     </div>
@@ -150,8 +151,9 @@ class HomeLayout extends React.Component {
                         <div class="card"> 
                             <img class="card-img-top" src={guy2} alt="Card image cap" />
                             <div class="card-body" >
-                            <h4 class="card-title">Watch the northern lights</h4>
-                            <p class="card-text">Looking for adventurous buddies to watch the northen lights together with</p>
+                            <h4 class="card-title">Watch the Auroras</h4>
+                            <p class="card-text">Looking for adventurous buddies to watch the northern lights together and explore Norway</p>
+                            <a href="#" class="btn btn-danger" >Join</a>
                             </div>
                         </div>
                     </div>
@@ -161,6 +163,7 @@ class HomeLayout extends React.Component {
                             <div class="card-body" >
                             <h4 class="card-title">15 day Europe tour</h4>
                             <p class="card-text">Travelling by train accross europe and stopping at each and every European countries</p>
+                            <a href="#" class="btn btn-danger" >Join</a>
                             </div>
                         </div>
                     </div>
@@ -170,7 +173,7 @@ class HomeLayout extends React.Component {
                             <div class="card-body" >
                             <h4 class="card-title">Hiking mount Everest</h4>
                             <p class="card-text">Join me if are as ambitious and have what it takes to hike the biggest mountain on earth.</p>
-
+                            <a href="#" class="btn btn-danger" >Join</a>
                             </div>
                         </div>
                     </div>
