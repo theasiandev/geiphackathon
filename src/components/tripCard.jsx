@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Redirect } from 'react-router-dom'
+import styles from '../../css/main.css'
 
 const TripCard = ({ title, destination, host, limit, description, startdate, enddate }) => {
     const [redirect, setRedirect] = useState(false)
@@ -23,15 +24,16 @@ const TripCard = ({ title, destination, host, limit, description, startdate, end
     }
 
     return(
-        <div onClick={ setRedirect }>
-            { redirectElement }
-            <h3>Title: { title }</h3>
-            <h4>Destination: { destination }</h4>
-            <h4>Host: { host }</h4>
-            <h4>Expected Number: { limit }</h4>
-            <p>Description: { description }</p>
-            <h4>Date Range: {`${ startdate }-${ enddate }`}</h4>
-        </div>
+        
+            <div onClick={ setRedirect} className={styles.cardStyle}>
+                { redirectElement }
+                <h3>{ title }</h3>
+                <p>Date of trip : {`${ startdate }-${ enddate }`}</p>
+                <h4>{ destination }</h4>
+                <h6>Accepting only 5 traveller(s)</h6>
+                <p>{ description }</p>
+                <p><i>Hosted by : { host }</i></p>
+            </div>
     )
 }
 
