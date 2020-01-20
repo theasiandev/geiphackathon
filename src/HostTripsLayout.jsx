@@ -90,7 +90,7 @@ class HostTripsLayout extends React.Component {
                                 </div>
                             </div>
 
-                        <button type="button" class="btn btn-danger" class="mx-auto" onClick={() => { submitHost(title, destination, description, limit, startdate, enddate).then(this.setState({ redirect : true })) } }>Submit Listing</button>
+                        <button class="btn btn-danger mx-auto"  onClick={() => { submitHost(title, destination, description, limit, startdate, enddate).then(this.setState({ redirect : true })) } }>Submit Listing</button>
 
                     </div>
                 </div>
