@@ -25,15 +25,15 @@ class FindTripsLayout extends React.Component {
 
         let eventElements = events.map( (event) => {
             return(
-                <div>
+                    <div class="col-md-3">
                     <TripCard
-                        title={ event.title }
-                        destination={ event.destination }
-                        host={ event.host }
-                        number={ event.limit }
-                        description={ event.description }
-                        startdate={ event.startdate }
-                        enddate={ event.enddate }
+                    title={ event.title }
+                    destination={ event.destination }
+                    host={ event.host }
+                    number={ event.limit }
+                    description={ event.description }
+                    startdate={ event.startdate }
+                    enddate={ event.enddate }
                     >
                     </TripCard>
                 </div>
@@ -42,8 +42,12 @@ class FindTripsLayout extends React.Component {
 
         return(
             <div>
-                <h1>Explore Trips</h1>
-                { eventElements }
+                <h1>Explore Trips</h1>  
+                <div class="container-fluid mt-5" >
+                        <div class="row">
+                            { eventElements }
+                        </div>
+                 </div>
             </div>
         )
     }
